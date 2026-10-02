@@ -12,6 +12,7 @@
 import 'dart:math';
 
 void main() {
+<<<<<<< HEAD
   // 1. List<String> of student names
   List<String> studentNames = ["Alice", "Bob", "Charlie", "Diana", "Eve"];
 
@@ -26,12 +27,31 @@ void main() {
   }
 
   // 4. Find highest, lowest and average score
+=======
+  // 1. Create a List<String> of student names: ["Alice", "Bob", "Charlie", "Diana", "Eve"]
+  // TODO: Create the student names list
+  List<String> studentNames = [];
+
+  // 2. Create a Map<String, int> to store student scores
+  // TODO: Create the scores map
+  Map<String, int> studentScores = {};
+
+  // 3. Use a for loop to assign random scores (60-100) to each student
+  // TODO: Implement the for loop to assign random scores
+
+  // 4. Find and display:
+  //    - The student with the highest score
+  //    - The student with the lowest score
+  //    - The average score of all students
+  // TODO: Implement the logic to find highest, lowest, and average scores
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   String highestStudent = "";
   int highestScore = 0;
   String lowestStudent = "";
   int lowestScore = 100;
   double averageScore = 0.0;
 
+<<<<<<< HEAD
   int total = 0;
   for (String student in studentNames) {
     int score = studentScores[student] ?? 0;
@@ -47,17 +67,32 @@ void main() {
     }
   }
   averageScore = total / studentNames.length;
+=======
+  // TODO: Add your logic here
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
 
   print("Student Scores: $studentScores");
   print("Highest Score: $highestStudent with $highestScore");
   print("Lowest Score: $lowestStudent with $lowestScore");
+<<<<<<< HEAD
   print("Average Score: ${averageScore.toStringAsFixed(1)}");
 
   // 5. Switch statement to categorize students
+=======
+  print("Average Score: $averageScore");
+
+  // 5. Use a switch statement to categorize students:
+  //    - 90-100: "Excellent"
+  //    - 80-89: "Good"
+  //    - 70-79: "Average"
+  //    - Below 70: "Needs Improvement"
+  // TODO: Implement the switch statement for each student
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   for (String student in studentNames) {
     int score = studentScores[student] ?? 0;
     String category = "";
 
+<<<<<<< HEAD
     // Dividing by 10 turns each range into a single case value
     // (e.g. 85 ~/ 10 = 8, 100 ~/ 10 = 10)
     switch (score ~/ 10) {
@@ -74,6 +109,9 @@ void main() {
       default:
         category = "Needs Improvement";
     }
+=======
+    // TODO: Add your switch statement here
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
 
     print("$student: $score ($category)");
   }
